@@ -143,14 +143,14 @@
               </div>
             </div>
       
-            <INPUT TYPE="hidden"  name="timsm"   VALUE="00">
-            <INPUT TYPE="hidden"  name="nreq"    VALUE="10">
-            <INPUT TYPE="hidden"  name="lang"    VALUE="it">
-            <INPUT TYPE="hidden"  name="channel"  VALUE="tcom">
-            <INPUT TYPE="hidden"  name="npag"   VALUE="1">
-            <INPUT TYPE="hidden"  name="lang_r"   VALUE="it">
-            <INPUT TYPE="hidden"  name="channel_r"  VALUE="tcom">
-            <INPUT TYPE="hidden"  name="npag_r"   VALUE="1">
+            <input type="hidden" name="timsm" value="00">
+            <input type="hidden" name="nreq" value="10">
+            <input type="hidden" name="lang" value="it">
+            <input type="hidden" name="channel" value="tcom">
+            <input type="hidden" name="npag" value="1">
+            <input type="hidden" name="lang_r" value="it">
+            <input type="hidden" name="channel_r" value="tcom">
+            <input type="hidden" name="npag_r" value="1">
             <input type="submit" value="Cerca" class="submit-button btn btn-default">
           </form>
         
@@ -208,5 +208,19 @@
     <script src="//code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-40655110-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
   </body>
 </html>
