@@ -32,7 +32,8 @@
             <h3>Orari Treni Trenitalia</h3>
             <h3>Consulta online l&#39;<strong>orario</strong> del tuo treno</h3>
             
-            <form role="form" name="cercatreni" action="http://orario.trenitalia.com/b2c/nppPriceTravelSolutions.do?" target="_blank" onsubmit="return validateForm()" method="get">
+            <!-- <form role="form" name="cercatreni" id="cercatreni" action="http://orario.trenitalia.com/b2c/nppPriceTravelSolutions.do?" target="_blank" onsubmit="return validateForm()" method="get"> -->
+            <form role="form" name="cercatreni" id="cercatreni" action="risultati-orari-trenitalia.php" target="_self" onsubmit="return validateForm()" method="get">
               <input type="hidden" name="car" value="0">
               <div class="form-group">
                 <label>Stazione di partenza:</label>
@@ -156,12 +157,29 @@
       </p>
     </div>
     
+    <div id="divToUpdate">test</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.form.min.js"></script>
     <script type="text/javascript">
+      $(document).ready(function(){
+        // attach handler to form's submit event 
+        // $('#cercatreni').submit(function() { 
+        //     $(this).ajaxSubmit({
+        //       target:     '#divToUpdate', 
+        //       // url:        'comment.php', 
+        //       success:    function() { 
+        //         alert('Thanks for your comment!'); 
+        //       } 
+
+        //     }); 
+        //     return false; 
+        // });
+      });
+
       function validateForm() {
         var x=document.forms["cercatreni"]["stazin"].value;
         var y=document.forms["cercatreni"]["stazout"].value;
