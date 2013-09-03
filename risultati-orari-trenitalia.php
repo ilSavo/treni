@@ -54,8 +54,6 @@
       </p>
     </div>
     
-    <div id="divToUpdate">test</div>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
